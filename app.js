@@ -4,10 +4,12 @@ const bodyParser = require("body-parser")
 const mongodb = require("./db/connect")
 const contactRoute = require("./routes/contacts")
 
+const swaggerUi = require("swagger-ui-express")
+const swaggerDocument = require("./swagger.json")
+
 const port = process.env.PORT || 8000
-// app.use("/", (req, res) => {
-//     res.send("Hello World")
-// })
+
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 app.use(bodyParser.json())
 
