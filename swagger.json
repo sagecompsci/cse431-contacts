@@ -5,7 +5,7 @@
     "description": "Contacts",
     "version": "1.0.0"
   },
-  "host": "localhost:8000",
+  "host": "cse431-contacts-a1yy.onrender.com",
   "basePath": "/",
   "schemes": [
     "http"
