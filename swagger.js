@@ -5,7 +5,7 @@ const doc = {
         title: "My API",
         description: "Contacts"
     },
-    host: "localhost:8000"
+    host: process.env.PORT || "localhost:8000"
 };
 
 const outputFile = "./swagger.json";
